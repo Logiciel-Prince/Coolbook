@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    width:1300px;
+    margin: auto;
+    background-color: rgb(54, 139, 196);
+    display: flex;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    align-items: center;
+    border-radius: 50px 5px;
+    justify-content: space-between;
+}
+
+.logo{
+    float:left;
+}
+.logo img{
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 30px;
+}
+.nav{
+    margin-right: auto;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav ul li{
+    margin: 3px;
+    padding: 3px 12px;
+    border-radius: 8px;
+    color: aliceblue;
+    overflow: hidden;
+    /* background-color:rgb(246, 164, 12); */
+}
+.nav ul li:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(54, 139, 196);
+}
+
+.nav ul li:hover .dropdown{
+    display: block;
+}
+.nav ul li .dropdown{
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+    margin: 0px -12px -12px;
+    padding: 0;
+    background-color: rgb(30, 109, 162);
+    /* color: rgb(54, 139, 196);; */
+}
+.search form{
+   margin-right: 50px;
+   /* align-items: center; */
+}
+.search form input{
+    margin:10px;
+}
+.search form input[type=text]{
+    padding:4px 8px;
+    width: 200px;
+    border-radius: 4px;
+    border:none;
+}
+.search form input[type=submit]{
+    padding:6px 16px;
+    border-radius: 15px;
+    border:none;
+    background-color: blue;
+    color:white;
+    font-weight: bolder;
+}
+.search form input[type=submit]:hover{
+    background-color: rgb(205, 131, 21);
+    transform: scale(1.2);
+}
+
+
+
+
+main-container{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.container{
+    background-color: white;
+    width: 1400px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.container1{
+    background-color: white;
+    width: 1400px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.post{
+    background-color: white;
+    color:black;
+    padding: 8px;
+    width: 320px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 15px;
+}
+.post1{
+    background-color: white;
+    color:black;
+    padding: 8px;
+    width: 450px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 15px;
+}
+.post .user{
+    display: flex;
+    align-items: center;
+    height:30px;
+    /* justify-content: center; */
+}
+.post1 .user{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.post,.post1 .user img,label{
+    margin: 4px 8px;
+}
+.post .image img{
+    height: 400px;
+    width:320px;
+}
+.post .date label{
+    color:gray;
+}
+.post .tittle #tittle{
+    font-weight: bolder;
+}
+.post .description #desc{
+    font-weight: bolder;
+}
+.post1 .commentbox{
+    /* height: 535px; */
+    height:450px;
+    overflow: auto;
+}
+.post1 .commentbox::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+.post1 .commentbox .comments{
+    display: flex;
+    align-items: center;
+    margin: 6px 0px;
+    justify-content:space-between;
+    /* background-color:    rgb(178, 175, 175); */
+}
+.post1 .commentbox .comments img,label{
+    margin:0 8px;
+}
+.post1 .commentbox .comments sup{
+    font-size: 10px;
+    color: grey;
+}
+#username{
+    font-weight: bolder;
+}
+#comment{
+    margin-right: auto;
+}
+
+
+.post1 .postcomment form input[type=text]{
+    width: 325px;
+    height: 20px;
+    border: none;
+}
+.post1 .postcomment form input[type=submit]{
+   background:none;
+   border: none;
+   color:rgb(123, 123, 223);
+   font-weight: 700;
+   cursor: pointer;
+}
+.no-outline:focus{
+    outline:none;
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:rgb(30, 109, 162);
+}
